@@ -7,3 +7,9 @@ lab_medallion:
       threads: 4
       settings:
         TimeZone: UTC
+        s3_region: 'us-east-1'
+        s3_endpoint: 's3.seaweedfs.adm.adaltas.cloud'
+        s3_url_style: 'path'
+        s3_use_ssl: 'true'
+      extensions:
+        - httpfs
