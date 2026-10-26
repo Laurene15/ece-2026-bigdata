@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: bronze
+    description: Raw datasets uploaded to the S3 bucket.
+    config:
+      meta:
+        external_location: "read_csv('../{name}.csv', strict_mode = false)"
+    tables:
+      - name: users
+      - name: orders
